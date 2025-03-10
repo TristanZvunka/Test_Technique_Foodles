@@ -1,4 +1,5 @@
 # Test_Technique_Foodles
+```sql
 -- Tranformation et partitionnement des tables "staging" (bronze)
 CREATE OR REPLACE VIEW converted_date_sales AS
     SELECT
@@ -57,5 +58,5 @@ CREATE OR REPLACE final_table AS
     FROM ranked_sales
     WHERE sales_rank = 1
     ;
-
+```
 
